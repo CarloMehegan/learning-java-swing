@@ -5,9 +5,9 @@ import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
-public class MyFrame extends JFrame{
+public class LearningFrame extends JFrame{
 	
-	MyFrame() {
+	LearningFrame() {
 		
 		this.setTitle("jframe title goes here");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //EXIT instead of HIDE on closing the window
