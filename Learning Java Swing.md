@@ -60,6 +60,10 @@ frame.pack(); //size of the frame will adjust to fit all components. AKA don't n
 
 JPanel
 - a GUI component that functions as a container to hold other components
+	- you can add labels to a panels and then add panels to a frame, for example
+- panels use a flow layout manager
+	- with a flow layout when we add components they stick to the top, get centered, and then compoenents are added until the row fills up and then it moves on to a new row under the previous
+	- in the example code we set it to a border layout, which we used in the previous example with JLabels
 
 
 
