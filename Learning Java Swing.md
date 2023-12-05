@@ -146,7 +146,23 @@ BorderLayout
 	- west or east for a navigation bar
 	- south border for footer
 	- center for the main body of a program
-- 
+
+FlowLayout
+- places components in a row, sized at their preferred size
+- if the horizontal space in the container is too small, the FlowLayout class uses the next available row
+- components are horizontally centered within the container unless otherwise specified 
+	- `new FlowLayout(FlowLayout.LEADING)` this has them left aligned
+	- `new FlowLayout(FlowLayout.TRAILING)` this has them right aligned
+	- `new FlowLayout(FlowLayout.CENTER)` this is the default, centered
+
+GridLayout
+- places components in a grid of cells
+- each component takes all the available space within its cell
+- each cell is the same size
+	- `new FlowLayout(FlowLayout.LEADING)` this has them left aligned
+- `new GridLayout(3, 3)` specifies dimensions as 3x3
+- `new GridLayout(3, 3, 10, 10)` specifies dimensions as well as margin
+
 
 
 
