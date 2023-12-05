@@ -1,6 +1,7 @@
 package learningjavaswing;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 
@@ -15,7 +16,9 @@ import javax.swing.ImageIcon;
 public class Main {
 
 	public static void main(String[] args) {
-		new LearningBorderLayout();
+
+		new LearningLayeredPanes();
+		
 
 	}
 

@@ -164,6 +164,19 @@ GridLayout
 - `new GridLayout(3, 3, 10, 10)` specifies dimensions as well as margin
 
 
+LayeredPane
+- swing container that provides a third dimension for positioning components
+- ex. depth, z-index, ordering
+- each layer has a specific name, from back to front:
+	- Default
+	- Palette
+	- Modal
+	- PopUp
+	- Drag
+- we can add components to these different layers
+	- `layeredPane.add(label1, JLayeredPane.DEFAULT_LAYER);`
+- instead of typing these layer names, we can just use 0 through 4
+	- `layeredPane.add(label1, Integer.valueOf(0));`
 
 
 
