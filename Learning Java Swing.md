@@ -65,6 +65,76 @@ JPanel
 	- with a flow layout when we add components they stick to the top, get centered, and then compoenents are added until the row fills up and then it moves on to a new row under the previous
 	- in the example code we set it to a border layout, which we used in the previous example with JLabels
 
+JButton
+- a java gui button that performs an action when clicked on
+- we implement the ActionListener interface in order to perform actions when the button is clicked
+- alternatively, we can use a lambda expression to make it way easier and not have to implement ActionListener
+
+```Java
+package learningjavaswing;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class LearningButtons extends JFrame implements ActionListener {
+	JButton button;
+	
+	LearningButtons() {
+		button = new JButton();
+		button.setBounds(200, 100, 100, 50);
+		button.addActionListener(this);
+		//we pass in this class, bc it implements ActionListener
+		
+		//initialize the frame
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(null);
+		this.setSize(500,500);
+		this.setVisible(true);
+		this.add(button);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		//check to see if event that occurs is our button
+		if (e.getSource() == button) {
+			System.out.println("pikmin!");
+		}
+	}
+}
+```
+
+alternatively
+```Java
+package learningjavaswing;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class LearningButtons extends JFrame {
+	
+	JButton button;
+	
+	LearningButtons() {
+		button = new JButton();
+		button.setBounds(200, 100, 100, 50);
+		//instead of implementing ActionListener,
+		//we can use a lambda expression
+		button.addActionListener(e -> System.out.println("pikmin!")); 
+		
+		//initialize the frame
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(null);
+		this.setSize(500,500);
+		this.setVisible(true);
+		this.add(button);
+	}
+}
+```
+
+
+
 
 
 
