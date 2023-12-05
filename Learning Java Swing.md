@@ -133,7 +133,20 @@ public class LearningButtons extends JFrame {
 }
 ```
 
+Layout Manager
+- defines the natural layout for components within a container
+- 3 common managers
 
+BorderLayout
+- a BorderLayout places components in five areas
+- NORTH SOUTH EAST WEST and CENTER
+- all extra space is placed in the center area
+- typically
+	- north border for a title bar
+	- west or east for a navigation bar
+	- south border for footer
+	- center for the main body of a program
+- 
 
 
 
